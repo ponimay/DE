@@ -1,0 +1,46 @@
+﻿<Page x:Class="DE.Pages.AddEditPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DE.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddEditPage">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Тип партнера" Margin="10" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Text="Наименование" Margin="10" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Text="ФИО директора" Margin="10" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Text="Адрес партнера" Margin="10" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Text="Рейтинг партнера" Margin="10" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Text="Телефон партнера" Margin="10" Grid.Row="5" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Text="Email партнера" Margin="10" Grid.Row="6" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+
+        <ComboBox Name="CMB" SelectedItem="{Binding PartnerType}" DisplayMemberPath="PartnerRequestTypeTitle" Width="340" Height="30" Margin="10" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox Text="{Binding PartnerTitle}" Width="340" Height="30" Margin="10" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox Text="{Binding PartnerDirector}" Width="340" Height="30" Margin="10" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox Text="{Binding PartnerAdres}" Width="340" Height="30" Margin="10" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox Text="{Binding PartnerRate}" Width="340" Height="30" Margin="10" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox Text="{Binding PartnerPhone}" Width="340" Height="30" Margin="10" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox Text="{Binding PartnerEmail}" Width="340" Height="30" Margin="10" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button Name="Add" Click="Add_Click" Content="Сохранить" Width="340"  Height="30" Margin="10" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Left"  Background="ForestGreen" Foreground="#FFF" VerticalAlignment="Center"/>
+        
+    </Grid>
+</Page>

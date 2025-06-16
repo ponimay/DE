@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище user3ModelContainer" CdmEntityContainer="user3Entities">
+    <EntitySetMapping Name="Material">
+      <EntityTypeMapping TypeName="user3Model.Material">
+        <MappingFragment StoreEntitySet="Material">
+          <ScalarProperty Name="MaterialID" ColumnName="MaterialID" />
+          <ScalarProperty Name="MaterialTypeID" ColumnName="MaterialTypeID" />
+          <ScalarProperty Name="MaterialTitle" ColumnName="MaterialTitle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaterialType">
+      <EntityTypeMapping TypeName="user3Model.MaterialType">
+        <MappingFragment StoreEntitySet="MaterialType">
+          <ScalarProperty Name="MaterialTypeID" ColumnName="MaterialTypeID" />
+          <ScalarProperty Name="MaterialTypeTitle" ColumnName="MaterialTypeTitle" />
+          <ScalarProperty Name="MaterialTypeDefectPercent" ColumnName="MaterialTypeDefectPercent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Partner">
+      <EntityTypeMapping TypeName="user3Model.Partner">
+        <MappingFragment StoreEntitySet="Partner">
+          <ScalarProperty Name="PartnerID" ColumnName="PartnerID" />
+          <ScalarProperty Name="PartnerTypeID" ColumnName="PartnerTypeID" />
+          <ScalarProperty Name="PartnerTitle" ColumnName="PartnerTitle" />
+          <ScalarProperty Name="PartnerDirector" ColumnName="PartnerDirector" />
+          <ScalarProperty Name="PartnerAdres" ColumnName="PartnerAdres" />
+          <ScalarProperty Name="PartnerRate" ColumnName="PartnerRate" />
+          <ScalarProperty Name="PartnerPhone" ColumnName="PartnerPhone" />
+          <ScalarProperty Name="PartnerEmail" ColumnName="PartnerEmail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartnerType">
+      <EntityTypeMapping TypeName="user3Model.PartnerType">
+        <MappingFragment StoreEntitySet="PartnerType">
+          <ScalarProperty Name="PartnerRequestTypeID" ColumnName="PartnerRequestTypeID" />
+          <ScalarProperty Name="PartnerRequestTypeTitle" ColumnName="PartnerRequestTypeTitle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="user3Model.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ProductTypeID" ColumnName="ProductTypeID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductCount" ColumnName="ProductCount" />
+          <ScalarProperty Name="ProductMinPrice" ColumnName="ProductMinPrice" />
+          <ScalarProperty Name="ProductTitle" ColumnName="ProductTitle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RequestProduct">
+      <EntityTypeMapping TypeName="user3Model.RequestProduct">
+        <MappingFragment StoreEntitySet="RequestProduct">
+          <ScalarProperty Name="PartnerID" ColumnName="PartnerID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="user3Model.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductType">
+      <EntityTypeMapping TypeName="user3Model.ProductType">
+        <MappingFragment StoreEntitySet="ProductType">
+          <ScalarProperty Name="ProductTypeK" ColumnName="ProductTypeK" />
+          <ScalarProperty Name="ProductTypeTitle" ColumnName="ProductTypeTitle" />
+          <ScalarProperty Name="ProductTypeID" ColumnName="ProductTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
